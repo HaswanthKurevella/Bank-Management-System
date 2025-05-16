@@ -20,23 +20,9 @@ A Salesforce-based application designed to streamline core banking operations su
 - Email alerts for each transaction.
 - Prevents overdrafts and enforces minimum balance requirements.
 
-### 👨‍💼 Customer Service
-- Raise cases via Experience Cloud portal or email service.
-- Case tracking and resolution flow for customer support.
-
-### 💰 Loan Processing
-- Apply for loans through the customer portal.
-- Admin approval workflow for loan applications.
-- One-click monthly loan payment system.
-
 ### 🔄 Fund Transfer
 - Internal bank account transfers with validations.
 - Screen flow enabled for ease of use.
-
-### 👥 Referrals
-- Refer friends to open accounts or apply for loans.
-- Track referral history and impact.
-
 ---
 
 ## 📚 Use Cases Implemented
@@ -129,7 +115,7 @@ src/
 ├── flows/                  # Screen & record-triggered flows
 ├── reports/                # Dashboard components and report definitions
 ├── experienceCloud/        # Customer portal configurations
-├── approvalProcesses/      # Loan & KYC approval workflows
+├── approvalProcesses/      # KYC approval workflows
 # 🚀 Getting Started
 ```
 # 🚀 Getting Started
