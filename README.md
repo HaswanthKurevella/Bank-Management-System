@@ -89,9 +89,9 @@ A Salesforce-based application designed to streamline core banking operations su
 ## ⚡ Lightning Components
 
 - Custom Lightning Web Components (LWC) for:
-  - Loan repayment
   - Transaction panels
   - Account overview
+  - 
 - Lightning Messaging Service for cross-component communication.
 
 ---
@@ -128,7 +128,7 @@ git clone (https://github.com/HaswanthKurevella/Bank-Management-System.git)
 sfdx force:source:deploy -p force-app
 ```
 #👨‍💻 Author
-Haswanth – Salesforce Developer and Architect
+Haswanth – Salesforce Developer and Admin
 
 #📄 License
 This project is licensed under the MIT License.
