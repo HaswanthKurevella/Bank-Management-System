@@ -1,4 +1,3 @@
-# Bank-Management-System
 # GenC Bank Management System
 
 A Salesforce-based application designed to streamline core banking operations such as account management, transactions, loan processing, and customer service. This project leverages Salesforce's standard and custom objects, screen flows, approval processes, and Lightning components to offer an end-to-end banking experience.
