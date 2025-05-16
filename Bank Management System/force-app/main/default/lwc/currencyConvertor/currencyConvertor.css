@@ -1,0 +1,76 @@
+/* General Card Styling */
+.currency-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+    max-width: 380px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #e4e7ea;
+}
+
+/* Spacing and Layout adjustments */
+.currency-card .slds-p-around_medium {
+    padding: 20px;
+}
+
+/* Combobox and Input Fields */
+lightning-combobox, lightning-input {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+lightning-combobox .slds-select {
+    padding: 10px;
+}
+
+/* Convert Button Styling */
+.convert-button {
+    width: 100%;
+    padding: 0px;
+    background-color: grey;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.convert-button:hover {
+    background-color:black;
+    
+}
+
+/* Result Box Styling */
+.result-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e4e7ea;
+}
+
+.result-text {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .currency-card {
+        padding: 0px;
+    }
+
+    .converted-amount {
+        font-size: 18px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,75 @@
+/* Container Styles */
+.account-balance-container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #dcdcdc; /* Light grey border */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading Styles */
+.account-balance-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333; /* Dark grey text */
+    margin-bottom: 10px;
+}
+
+/* Account Balance Styles */
+.account-balance-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #666666; /* Medium grey text */
+}
+
+/* Error Message Styles */
+.error-message {
+    font-size: 18px;
+    color: #cc3333; /* Muted red for errors */
+    font-weight: bold;
+}
+
+/* Button Styles */
+.refresh-button {
+    background-color: #333333; /* Dark grey button */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover and Active States */
+.refresh-button:hover {
+    background-color: #555555; /* Medium grey button on hover */
+}
+
+.refresh-button:active {
+    transform: scale(0.9);
+    background-color: #222222; /* Slightly darker grey on click */
+    transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+/* Icon Animation (Optional) */
+.refresh-button svg {
+    transition: transform 0.3s ease-in-out;
+}
+
+.refresh-button:hover svg {
+    transform: rotate(360deg); /* Adds spinning effect */
+}

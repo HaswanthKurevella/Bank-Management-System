@@ -1,0 +1,5 @@
+<apex:page controller="TransactionPassbookController">
+    <apex:form >
+        <apex:commandButton value="Download Passbook" action="{!navigateToPdf}" />
+    </apex:form>
+</apex:page>

@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="Currency Converter" class="currency-card">
+        <div class="slds-p-around_medium">
+            <!-- Base Currency Selection -->
+            <lightning-combobox 
+                label="Select Base Currency"
+                value={baseCurrency}
+                options={rates}
+                onchange={handleBaseCurrencyChange}
+                class="currency-combobox">
+            </lightning-combobox>
+
+            <!-- Target Currency Selection -->
+            <lightning-combobox 
+                label="Select Target Currency"
+                value={targetCurrency}
+                options={rates}
+                onchange={handleTargetCurrencyChange}
+                class="currency-combobox">
+            </lightning-combobox>
+
+            <!-- Amount Input -->
+            <lightning-input 
+                type="number"
+                
+                step=".01"
+                label="Enter Amount"
+                value={amount}
+                onchange={handleAmountChange}
+                class="currency-input">
+            </lightning-input>
+
+            <!-- Convert Button -->
+            <lightning-button 
+                label="Convert" 
+                variant="brand" 
+                class="convert-button"
+                onclick={handleConvert}>
+            </lightning-button>
+
+            <!-- Result Box for Converted Amount -->
+            <template if:true={convertedAmount}>
+                <div class="result-box">
+                    <p class="result-text"><strong>{convertedAmount} {targetCurrency}</strong></p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

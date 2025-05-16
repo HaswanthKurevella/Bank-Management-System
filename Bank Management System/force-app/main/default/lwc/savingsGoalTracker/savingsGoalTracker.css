@@ -1,0 +1,101 @@
+/* Global Styles */
+:host {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* Card Height Adjustment */
+.reduced-height-card {
+    padding: 8px !important; /* Smaller padding */
+}
+
+
+/* Progress Bar Styles */
+.progress-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    height: 15px; /* Adjust height */
+    margin: 8px 0; /* Reduced margin */
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #28a745;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+    position: relative;
+}
+
+.progress-percent {
+    display: none; /* Initially hidden */
+    position: absolute;
+	font-size: smaller;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Show percentage on hover */
+.progress-container:hover .progress-percent {
+    display: block;
+}
+
+/* Modal Container Styling */
+.slds-modal__container {
+  max-width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+}
+
+/* Button Styles */
+.button {
+  background-color: #333333; /* Dark grey for normal state */
+  color: #ffffff; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px; /* Subtle rounding for edges */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Hover State */
+.button:hover {
+  background-color: #555555; /* Medium grey for hover */
+}
+
+/* Active State */
+.button:active {
+  background-color: #222222; /* Slightly darker grey for click */
+  transform: scale(0.95); /* Subtle press effect */
+}
+
+/* Edit Icon Styles */
+.edit-icon {
+  margin-left: 4px;
+  color: #28a745;
+  cursor: pointer;
+  width: 12px;  /* Adjust width as needed */
+  height: 12px; /* Adjust height as needed */
+  transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1), color 0.5s ease;
+  transform: scale(0.5); /* Slightly larger initial size for smoother transitions */
+}
+
+.edit-icon:hover {
+  color: #555555; /* Grey color for hover state */
+  transform: scale(0.7); /* Subtle zoom effect */
+}
+
+.edit-icon:active {
+  color: #222222; /* Slightly darker grey for click state */
+  transform: scale(0.60); /* Gentle press effect */
+  transition: transform 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045), color 0.2s ease-out; /* Snappier motion on press */
+}
