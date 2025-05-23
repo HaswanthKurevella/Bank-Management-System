@@ -127,6 +127,13 @@ git clone (https://github.com/HaswanthKurevella/Bank-Management-System.git)
 ```bash
 sfdx force:source:deploy -p force-app
 ```
+# Team Members
+- Pujitha
+- Sravya
+- Sai Kiran
+- Prayatakshnaa
+- Haswanth Kumar
+  
 #👨‍💻 Author
 Haswanth – Salesforce Developer and Admin
 
